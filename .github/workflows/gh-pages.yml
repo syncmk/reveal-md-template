@@ -19,8 +19,6 @@ jobs:
       - run: npm install --save glob
       - run: mkdir public
       - run: node inject.js
-        with:
-          keep_files: true
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
