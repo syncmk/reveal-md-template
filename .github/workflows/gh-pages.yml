@@ -15,11 +15,11 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-          publish_dir: ./public
 
-      - run: npm install --save glob
-      - run: mkdir public
-      - run: node inject.js
+        run: |
+          npm install --save glob
+          mkdir public
+          node inject.js
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
