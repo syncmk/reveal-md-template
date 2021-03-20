@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: '14'
 
+      - name: Run
         run: |
           npm install --save glob
           mkdir public
