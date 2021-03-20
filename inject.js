@@ -3,7 +3,7 @@ const glob = require("glob");
 
 let template = fs.readFileSync("template/template.html", "utf-8");
 
-glob("*.md", function (err, files) {
+glob("markdown/*.md", function (err, files) {
   if(err) {
     console.log(err);
   }
